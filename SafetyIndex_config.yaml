@@ -1,0 +1,10 @@
+exp_prefix: "SafetyIndex"
+epoch: 20
+elite_ratio: 0.1
+populate_num: 100
+init_params: [0.1398, 4.2405, 8.8942]
+lower_bound: [0, 0.2, 0]
+upper_bound: [2, 20, 50]
+init_sigma_ratio: 0.3 # initial sigma = init_sigma_ratio * (upper_bound - lower_bound)
+noise_ratio: 0.01 # noise = noise_ratio * (upper_bound - lower_bound)
+evaluator: "SafetyIndexEvaluator"
